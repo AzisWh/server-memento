@@ -64,8 +64,35 @@ DB_USERNAME=root
 DB_PASSWORD=password_database
 ```
 
+Database :
+
+Migrate
+
+```bash
+php artisan migrate
+```
+
+Seed Foodlist
+
+```bash
+php artisan db:seed --class=FoodList
+```
+
 Run Server :
 
 ```bash
 php artisan serve
 ```
+
+API ROUTES :
+```bash
+url/api/login
+url/api/register
+url/api/logout
+url/api/refresh
+url/api/foodlist
+url/api/fooddetail/id
+url/api/foodbuy
+url/api/userfood
+```
+
