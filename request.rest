@@ -1,0 +1,28 @@
+
+GET http://127.0.0.1:8000/api/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJhemlzNSIsImVtYWlsIjoiYXppczVAZ21haWwuY29tIiwiaWF0IjoxNzM5ODc3NzEzLCJleHAiOjE3Mzk4Nzc3MzN9.Jkkm0wY_NMlBA7dLSTrUO-4jvw9qu1YvgdvZDsvXg0k
+
+###
+POST http://127.0.0.1:8000/api/register
+Content-Type: application/json
+
+{
+    "name": "azis5",
+    "email": "azis5@gmail.com",
+    "password": "azis5@gmail.com",
+}
+
+###
+POST http://127.0.0.1:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "azis5@gmail.com",
+    "password": "1234"
+}
+
+###
+GET http://127.0.0.1:8000/api/refresh
+
+###
+DELETE http://127.0.0.1:8000/api/logout
